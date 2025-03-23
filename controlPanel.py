@@ -15,7 +15,7 @@ print("1. Ultrasonic Testing(1-100 MHz)")
 print("2. Eddy Current Testing (10-10,000 kHz)")
 print("3. X-ray Testing (100-450 kV)")
 
-
+print(" ")
 method = int(input("ENTER A NUMBER BETWEEN 1-3 "
 "(1 for Ultrasonic, 2 for Eddy Current, or 3 for X-Ray)\n"
 " \n"
