@@ -2,6 +2,9 @@
 import random
 import time
 
+#add variable to keep count of rounds
+var = 0
+
 print(" ")
 
 print("Welcome to the control panel. \nPLEASE MAKE A SELECTION")
@@ -20,6 +23,10 @@ method = int(input("ENTER A NUMBER BETWEEN 1-3 "
 
 #keep program running until user presses any key to exit
 while True:
+        var += 1
+        print(" ")
+        print(f"ROUND {var}")
+        print(" ")
 
         #method 1
         if method == 1:
