@@ -73,7 +73,7 @@ while True:
        #exit control panel          
         else:
              print("Exiting control panel...")
-             time.sleep(3)
+             time.sleep(1)
              print(" ")
              print("YOU HAVE EXITED THE CONTROL PANEL")
              break
