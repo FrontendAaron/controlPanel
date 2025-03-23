@@ -31,16 +31,16 @@ while True:
         #method 1
         if method == 1:
             frequency = int(input("Enter a frequency (1-100 MHz for Ultrasonic): "))
-            print(f"You selected Ultrasonic testing at {frequency} Mhz")
+            print(f"You selected Ultrasonic testing at {frequency} MHz")
             print(" ")
             print("Performing test...")
             time.sleep(3)
             result = random.randint(1,100)
-            if result >= 1 or result <= 100:
+            if result >= 1 and result <= 30:
                  print("No Defects Detected")
-            elif result >= 31 or result <= 70:
+            elif result >= 31 and result <= 70:
                  print("Minor Surface Defects")
-            elif result >= 71 or result <= 1000:
+            elif result >= 71 and result <= 100:
                  print("Internal Cracks Detected")
         #method 2
         elif method == 2:
@@ -50,11 +50,11 @@ while True:
             print("Performing test...")
             time.sleep(3)
             result = random.randint(10,10000)
-            if result >= 10 or result <= 500:
+            if result >= 1 and result <= 30:
                  print("No Defects Detected")
-            elif result >= 501 or result <= 5000:
+            elif result >= 31 and result <= 70:
                  print("Minor Surface Defects")
-            elif result >= 50001 or result <= 10000:
+            elif result >= 71 and result <= 100:
                  print("Internal Cracks Detected")
         #method 3
         elif method == 3:
@@ -63,13 +63,14 @@ while True:
             print(" ")
             print("Performing test...")
             time.sleep(3)
-            result = random.randint(10,10000)
-            if result >= 10 or result <= 200:
+            result = random.randint(1,100)
+            if result >= 1 and result <= 30:
                  print("No Defects Detected")
-            elif result >= 201 or result <= 350:
+            elif result >= 31 and result <= 70:
                  print("Minor Surface Defects")
-            elif result >= 351 or result <= 450:
+            elif result >= 71 and result <= 100:
                  print("Internal Cracks Detected")
+       #exit control panel          
         else:
              print("Exiting control panel...")
              time.sleep(3)
